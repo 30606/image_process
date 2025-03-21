@@ -1,0 +1,13 @@
+{
+  "name": "image_process",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "dependencies": {
+    "jimp": "^1.6.0",
+    "sharp": "^0.32.0"
+  }
+}

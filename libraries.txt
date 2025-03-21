@@ -1,0 +1,30 @@
+Libraries Used in the Code:
+
+1. os:
+   - Purpose: File system operations such as creating directories and reading files.
+   - Example: os.makedirs(output_folder, exist_ok=True) - Creates an output folder if it doesn't exist.
+
+2. sys:
+   - Purpose: To read command-line arguments passed while running the script.
+   - Example: sys.argv is used to get input folder, output folder, margins, etc., from the command line.
+
+3. logging:
+   - Purpose: To log messages for debugging and track the flow of the program.
+   - Example: logging.info(f"Processing folder: {input_folder}") logs informational messages.
+
+4. PIL (Pillow):
+   - Purpose: For image processing tasks like opening, scaling, centering, and merging images.
+   - Example: 
+     - Image.open() - Opens an image file.
+     - Image.resize() - Resizes the image based on the zoom factor.
+     - Image.alpha_composite() - Combines transparent and background images.
+
+5. ImageChops (from PIL):
+   - Purpose: To perform image manipulation such as blending images.
+   - Example: ImageChops.multiply() - Blends two images by applying a multiplication blend.
+
+6. concurrent.futures:
+   - Purpose: For multithreading to execute tasks concurrently, speeding up image processing.
+   - Example: 
+     - ThreadPoolExecutor() - Manages a pool of threads to process multiple images in parallel.
+     - as_completed() - Retrieves the results from threads as they complete.
